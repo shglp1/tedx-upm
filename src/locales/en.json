@@ -1,0 +1,159 @@
+{
+    "common": {
+        "direction": "ltr",
+        "tedx": "TEDxUPM",
+        "date": "February 12, 2026",
+        "location": "Prince Muqrin University"
+    },
+    "nav": {
+        "home": "Home",
+        "about_tedx": "About TEDx",
+        "about_upm": "TEDxUPM",
+        "speakers": "Speakers",
+        "schedule": "Schedule",
+        "contact": "Contact Us"
+    },
+    "hero": {
+        "theme": "From Its Light...",
+        "subtitle": "Where the light of ideas meets the spirit of Madinah",
+        "cta": "Explore Event"
+    },
+    "about_tedx": {
+        "title": "What is TEDx?",
+        "content_p1": "TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TED Talks video and live speakers combine to spark deep discussion and connection in a small group.",
+        "content_p2": "The x in TEDx stands for independently organized TED event. TEDx events are planned and coordinated independently, on a community-by-community basis, under a free license from TED.",
+        "content_p3": "TEDx events follow the TED format and are organized independently with the TED spirit: ideas worth spreading."
+    },
+    "about_upm": {
+        "title": "About TEDxUPM",
+        "intro_title": "From Its Light...",
+        "intro_subtitle": "The Light of Ideas with the Light of Place",
+        "content_p1": "In a city where the light of ideas meets the light of place, where the radiance of inspiration intertwines with the luminance of Madinah, stories pulse with a unique glow unlike any other city.",
+        "content_p2": "Here... where the brilliance of history meets the radiance of the soul, where hospitality transcends service to become a feeling that illuminates the heart before the place.",
+        "content_p3": "This year's TEDxUPM edition presents an event not just to be watched... but felt and lived. An event bringing together the light of ideas worth spreading, the light of a city that has inspired the world for centuries, and the light of inspiration born when human experience intertwines with the deep values of this blessed land.",
+        "tourism_title": "Why Tourism?",
+        "tourism_content_p1": "In alignment with Saudi Vision 2030's objectives to make Madinah a leading global destination for historical and cultural tourism, Prince Muqrin University has adopted this year's TEDxUPM event targeting the \"tourism\" sector to raise awareness of future opportunities in tourism and connect students with their role in developing this promising field.",
+        "tourism_content_p2": "As one of the first universities offering academic programs in international tourism and hospitality, this is an ideal opportunity to lead this qualitative dialogue about tourism transformation and the role of youth in enriching the visitor experience and developing destinations in Madinah through strategic partnerships with relevant entities.",
+        "quote": "Madinah is not a place to visit... but an identity to live"
+    },
+    "schedule": {
+        "title": "Event Schedule",
+        "opening": {
+            "time": "4:30 – 4:45 PM",
+            "type": "Opening",
+            "title": "Welcome + Introduction: Inspiration From Its Light"
+        },
+        "session1": {
+            "time": "4:45 – 5:45 PM",
+            "type": "Session 1",
+            "title": "The Light of Ideas with the Light of Place",
+            "talk1": "Talk 1: A City Rooted in Values, Globally Oriented",
+            "talk2": "Talk 2: Madinah's Hospitality: From Tradition to Global Tourism Model",
+            "talk3": "Talk 3: An Experience Beyond Visitation",
+            "talk4": "Talk 4: Hands of Light"
+        },
+        "break1": {
+            "time": "5:45 – 6:10 PM",
+            "type": "Coffee Break",
+            "title": "Coffee + Networking + Light Experience"
+        },
+        "session2": {
+            "time": "6:10 – 7:10 PM",
+            "type": "Session 2",
+            "title": "How Does Smart Tourism Tell Madinah's Story?",
+            "talk5": "Talk 5: Protecting Heritage Digitally",
+            "talk6": "Talk 6: How Do We Reach the World Properly?",
+            "talk7": "Talk 7: Your Guide in Your Phone - Guide Madina",
+            "performance": "Performance: Artistic Interlude"
+        },
+        "break2": {
+            "time": "7:10 – 7:30 PM",
+            "type": "Short Break",
+            "title": "Prayer/Rest Break"
+        },
+        "session3": {
+            "time": "7:30 – 8:30 PM",
+            "type": "Session 3",
+            "title": "Madinah as an Integrated Experience",
+            "talk8": "Talk 8: From Idea to Reality",
+            "talk9": "Talk 9: School Trips... But with a New Style",
+            "talk10": "Talk 10: Education Without Blackboards",
+            "talk11": "Talk 11: The City Behind the Scenes"
+        },
+        "closing": {
+            "time": "8:30 PM",
+            "type": "Closing",
+            "title": "Thanks + Group Photo + Call to Continue the Dialogue"
+        },
+        "gathering": {
+            "time": "9:00 PM",
+            "type": "Alumni Gathering",
+            "title": "Event gathering alumni and faculty members"
+        }
+    },
+    "speakers": {
+        "title": "Speakers",
+        "session_1_badge": "Session 1: The Light of Ideas",
+        "session_2_badge": "Session 2: Smart Tourism",
+        "session_3_badge": "Session 3: Integrated Experience",
+        "talk_1": {
+            "title": "A City Rooted in Values, Globally Oriented",
+            "desc": "Urban planning, sustainability, and quality of life in Madinah"
+        },
+        "talk_2": {
+            "title": "Madinah's Hospitality: From Tradition to Global Tourism Model",
+            "desc": "Transforming traditional hospitality values into professional economic models"
+        },
+        "talk_3": {
+            "title": "An Experience Beyond Visitation",
+            "desc": "Visitor perspectives on Madinah - transformation, peace, and spiritual experience"
+        },
+        "talk_4": {
+            "title": "Hands of Light",
+            "desc": "Volunteerism in Madinah - volunteer guides, community organizations, CSR initiatives"
+        },
+        "talk_5": {
+            "title": "Protecting Heritage Digitally",
+            "desc": "Documentation, archiving, filming, preserving stories of elders before they're lost"
+        },
+        "talk_6": {
+            "title": "How Do We Reach the World Properly?",
+            "desc": "Communicating heritage globally with quality content (languages, platforms, partnerships)"
+        },
+        "talk_7": {
+            "title": "Your Guide in Your Phone - Guide Madina",
+            "desc": "Using QR/AR/AI as interactive guide with stories, translation, personalized recommendations"
+        },
+        "talk_8": {
+            "title": "From Idea to Reality",
+            "desc": "Young entrepreneur's story transforming simple tourism experience into sustainable project"
+        },
+        "talk_9": {
+            "title": "School Trips... But with a New Style",
+            "desc": "Connecting landmarks with curriculum, structured visits, teacher guides, pre/post activities"
+        },
+        "talk_10": {
+            "title": "Education Without Blackboards",
+            "desc": "Designing interactive educational experiences"
+        },
+        "talk_11": {
+            "title": "The City Behind the Scenes",
+            "desc": "How industry (furniture, food, infrastructure, transport) creates integrated tourism experience"
+        }
+    },
+    "contact": {
+        "title": "Contact Us",
+        "subtitle": "We'd love to hear from you. Get in touch with us for any inquiries about the event.",
+        "venue_label": "Venue",
+        "venue": "Prince Muqrin University - Female Campus | Bin Laden Hall",
+        "capacity": "580 Seats",
+        "email": "career.center@upm.edu.sa",
+        "open_maps": "Open in Google Maps",
+        "follow_us": "Follow Us"
+    },
+    "footer": {
+        "social_label": "Follow Us",
+        "disclaimer": "This independent TEDx event is operated under license from TED.",
+        "rights": "All rights reserved."
+    }
+}
