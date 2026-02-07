@@ -29,11 +29,11 @@ const AboutTEDxUPM = () => {
 
     const fadeInUp = {
         hidden: { opacity: 0, y: 40 },
-        visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
+        visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" as any } }
     };
 
     // Parallax-style floating entry for patterns
-    const floatIn = (direction) => ({
+    const floatIn = (direction: 'left' | 'right') => ({
         hidden: {
             opacity: 0,
             x: direction === 'left' ? -100 : 100,
@@ -43,7 +43,7 @@ const AboutTEDxUPM = () => {
             opacity: 1,
             x: 0,
             rotate: direction === 'left' ? 12 : -12,
-            transition: { duration: 1.2, ease: "easeOut" }
+            transition: { duration: 1.2, ease: "easeOut" as any }
         }
     });
 
