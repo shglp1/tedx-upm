@@ -39,7 +39,7 @@ const Hero = () => {
                     <div className="relative inline-block mx-auto mb-6">
                         {/* LEFT PATTERN */}
                         <div
-                            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-full hidden lg:block pointer-events-none"
+                            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-full hidden lg:block pointer-events-none will-change-transform"
                             style={{ height: '120%', marginLeft: '-80px' }}
                         >
                             <motion.img
@@ -57,7 +57,7 @@ const Hero = () => {
 
                         {/* CENTER LOGO */}
                         <motion.div
-                            className="relative z-10"
+                            className="relative z-10 will-change-transform"
                             initial={{ opacity: 0, scale: 0.8, y: 20 }}
                             animate={{ opacity: 1, scale: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: 0.3, ease: "backOut" }}
@@ -77,7 +77,7 @@ const Hero = () => {
 
                         {/* RIGHT PATTERN */}
                         <div
-                            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-full hidden lg:block pointer-events-none"
+                            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-full hidden lg:block pointer-events-none will-change-transform"
                             style={{ height: '120%', marginRight: '-40px' }}
                         >
                             <motion.img

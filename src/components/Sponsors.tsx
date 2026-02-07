@@ -37,7 +37,7 @@ const Sponsors = () => {
                 <div className="flex overflow-hidden" dir="ltr">
                     {/* First Strip */}
                     <motion.div
-                        className="flex gap-8 md:gap-20 items-center whitespace-nowrap px-4 md:px-10"
+                        className="flex gap-8 md:gap-20 items-center whitespace-nowrap px-4 md:px-10 will-change-transform"
                         initial={{ x: "0%" }}
                         whileInView={{ x: "-100%" }}
                         viewport={{ once: true }}
@@ -63,7 +63,7 @@ const Sponsors = () => {
 
                     {/* Second Strip (Identical copy) */}
                     <motion.div
-                        className="flex gap-8 md:gap-20 items-center whitespace-nowrap px-4 md:px-10"
+                        className="flex gap-8 md:gap-20 items-center whitespace-nowrap px-4 md:px-10 will-change-transform"
                         initial={{ x: "0%" }}
                         whileInView={{ x: "-100%" }}
                         viewport={{ once: true }}

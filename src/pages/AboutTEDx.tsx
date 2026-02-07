@@ -52,7 +52,7 @@ const AboutTEDx = () => {
                                 whileHover={{ y: -5, scale: 1.01, transition: { duration: 0.2 } }}
                                 viewport={{ once: true, margin: "-50px" }}
                                 transition={{ duration: 0.8, type: "spring", bounce: 0.4 }}
-                                className="bg-white dark:bg-gray-900/50 backdrop-blur-sm p-8 md:p-12 rounded-2xl shadow-lg hover:shadow-2xl border border-white/50 dark:border-gray-800 relative overflow-hidden group transition-all duration-300"
+                                className="bg-white dark:bg-gray-900/50 backdrop-blur-sm p-8 md:p-12 rounded-2xl shadow-lg hover:shadow-2xl border border-white/50 dark:border-gray-800 relative overflow-hidden group transition-all duration-300 will-change-transform"
                             >
                                 <div className="absolute top-0 right-0 w-2 h-full bg-tedx-red origin-bottom transform scale-y-0 group-hover:scale-y-100 transition-transform duration-500 ease-out"></div>
                                 <div className="absolute top-0 right-0 w-2 h-full bg-tedx-red opacity-30"></div>
@@ -74,7 +74,7 @@ const AboutTEDx = () => {
                                 whileHover={{ y: -5, scale: 1.01, transition: { duration: 0.2 } }}
                                 viewport={{ once: true, margin: "-50px" }}
                                 transition={{ duration: 0.8, type: "spring", bounce: 0.4, delay: 0.2 }}
-                                className="bg-white dark:bg-gray-900/50 backdrop-blur-sm p-8 md:p-12 rounded-2xl shadow-lg hover:shadow-2xl border border-white/50 dark:border-gray-800 relative overflow-hidden group transition-all duration-300"
+                                className="bg-white dark:bg-gray-900/50 backdrop-blur-sm p-8 md:p-12 rounded-2xl shadow-lg hover:shadow-2xl border border-white/50 dark:border-gray-800 relative overflow-hidden group transition-all duration-300 will-change-transform"
                             >
                                 <div className="absolute top-0 right-0 w-2 h-full bg-madinah-dark dark:bg-white origin-bottom transform scale-y-0 group-hover:scale-y-100 transition-transform duration-500 ease-out"></div>
                                 <div className="absolute top-0 right-0 w-2 h-full bg-madinah-dark dark:bg-white opacity-30"></div>
@@ -93,7 +93,7 @@ const AboutTEDx = () => {
                                 whileHover={{ y: -5, scale: 1.01, transition: { duration: 0.2 } }}
                                 viewport={{ once: true, margin: "-50px" }}
                                 transition={{ duration: 0.8, type: "spring", bounce: 0.4 }}
-                                className="bg-white dark:bg-gray-900/50 backdrop-blur-sm p-8 md:p-12 rounded-2xl shadow-lg hover:shadow-2xl border border-white/50 dark:border-gray-800 relative overflow-hidden group transition-all duration-300"
+                                className="bg-white dark:bg-gray-900/50 backdrop-blur-sm p-8 md:p-12 rounded-2xl shadow-lg hover:shadow-2xl border border-white/50 dark:border-gray-800 relative overflow-hidden group transition-all duration-300 will-change-transform"
                             >
                                 <div className="absolute top-0 left-0 w-2 h-full bg-tedx-red origin-bottom transform scale-y-0 group-hover:scale-y-100 transition-transform duration-500 ease-out"></div>
                                 <div className="absolute top-0 left-0 w-2 h-full bg-tedx-red opacity-30"></div>
@@ -115,7 +115,7 @@ const AboutTEDx = () => {
                                 whileHover={{ y: -5, scale: 1.01, transition: { duration: 0.2 } }}
                                 viewport={{ once: true, margin: "-50px" }}
                                 transition={{ duration: 0.8, type: "spring", bounce: 0.4, delay: 0.2 }}
-                                className="bg-white dark:bg-gray-900/50 backdrop-blur-sm p-8 md:p-12 rounded-2xl shadow-lg hover:shadow-2xl border border-white/50 dark:border-gray-800 relative overflow-hidden group transition-all duration-300"
+                                className="bg-white dark:bg-gray-900/50 backdrop-blur-sm p-8 md:p-12 rounded-2xl shadow-lg hover:shadow-2xl border border-white/50 dark:border-gray-800 relative overflow-hidden group transition-all duration-300 will-change-transform"
                             >
                                 <div className="absolute top-0 left-0 w-2 h-full bg-madinah-dark dark:bg-white origin-bottom transform scale-y-0 group-hover:scale-y-100 transition-transform duration-500 ease-out"></div>
                                 <div className="absolute top-0 left-0 w-2 h-full bg-madinah-dark dark:bg-white opacity-30"></div>

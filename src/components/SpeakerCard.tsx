@@ -52,7 +52,7 @@ const SpeakerCard = ({ speaker, index = 0 }: SpeakerCardProps) => {
                 {/* BIG RED PATTERN: Top Left (ALWAYS Left) */}
                 <motion.div
                     variants={patternVariants(-35, -20, -15)}
-                    className="absolute -top-12 -left-12 z-10"
+                    className="absolute -top-12 -left-12 z-10 will-change-transform"
                 >
                     <img
                         src="/logo_UPM_Patterns.svg"
@@ -65,7 +65,7 @@ const SpeakerCard = ({ speaker, index = 0 }: SpeakerCardProps) => {
                 {/* BIG RED PATTERN: Bottom Right (ALWAYS Right) */}
                 <motion.div
                     variants={patternVariants(40, 25, 20)}
-                    className="absolute -bottom-14 -right-14 z-10"
+                    className="absolute -bottom-14 -right-14 z-10 will-change-transform"
                 >
                     <img
                         src="/logo_Plam_Pattern.svg"
@@ -78,7 +78,7 @@ const SpeakerCard = ({ speaker, index = 0 }: SpeakerCardProps) => {
                 {/* RED PATTERN: Side (ALWAYS Right) */}
                 <motion.div
                     variants={patternVariants(20, 0, 45)}
-                    className="absolute top-1/2 -right-14 z-10"
+                    className="absolute top-1/2 -right-14 z-10 will-change-transform"
                 >
                     <img
                         src="/logo_Haram_Pattern.svg"
@@ -90,7 +90,7 @@ const SpeakerCard = ({ speaker, index = 0 }: SpeakerCardProps) => {
 
                 {/* The Red Photo Square */}
                 <motion.div
-                    className="w-[210px] h-[230px] bg-[#EB0028] relative z-20 shadow-[0_20px_50px_rgba(235,0,40,0.3)] overflow-hidden rounded-2xl flex items-end justify-center"
+                    className="w-[210px] h-[230px] bg-[#EB0028] relative z-20 shadow-[0_20px_50px_rgba(235,0,40,0.3)] overflow-hidden rounded-2xl flex items-end justify-center will-change-transform"
                     whileHover={{ scale: 1.02, y: -5 }}
                 >
                     {speaker.image ? (

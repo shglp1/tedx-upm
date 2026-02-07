@@ -11,10 +11,7 @@ const Speakers = () => {
     const scrollContainerRef = useRef<HTMLDivElement>(null);
     const scroll = (direction: 'left' | 'right') => {
         if (scrollContainerRef.current) {
-            const scrollAmount = 350;
-            // Always scroll visually left (-x) or right (+x) regardless of RTL
-            // In layout: Left moves to "previous" pixels (LTR Prev/RTL Next)
-            // Right moves to "next" pixels (LTR Next/RTL Prev)
+            const scrollAmount = 420; // Card w(350) + Margin(48) + Gap(24) approx
             const offset = direction === 'left' ? -scrollAmount : scrollAmount;
             scrollContainerRef.current.scrollBy({ left: offset, behavior: 'smooth' });
         }
@@ -38,7 +35,7 @@ const Speakers = () => {
 
                 <div className="relative group">
                     {/* Navigation Buttons - Visible on all screens, absolute positioned */}
-                    {/* Left Button: Visually Left. Moves Viewport Left (-x). LTR=Prev, RTL=Next */}
+                    {/* Left Button */}
                     <button
                         onClick={() => scroll('left')}
                         className="absolute left-2 top-1/2 -translate-y-1/2 z-50 bg-white/80 dark:bg-black/80 p-3 rounded-full shadow-lg text-tedx-red hover:scale-110 transition-transform block"
@@ -47,7 +44,7 @@ const Speakers = () => {
                         <ChevronLeft size={24} />
                     </button>
 
-                    {/* Right Button: Visually Right. Moves Viewport Right (+x). LTR=Next, RTL=Prev */}
+                    {/* Right Button */}
                     <button
                         onClick={() => scroll('right')}
                         className="absolute right-2 top-1/2 -translate-y-1/2 z-50 bg-white/80 dark:bg-black/80 p-3 rounded-full shadow-lg text-tedx-red hover:scale-110 transition-transform block"
@@ -59,7 +56,7 @@ const Speakers = () => {
                     {/* Horizontal Scroll Container */}
                     <div
                         ref={scrollContainerRef}
-                        className="flex overflow-x-auto gap-6 py-8 px-4 snap-x snap-mandatory scrollbar-hide scroll-smooth"
+                        className="flex overflow-x-auto gap-6 py-8 px-4 snap-x snap-mandatory scrollbar-hide scroll-smooth items-center"
                         style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
                     >
                         {speakers.map((speaker, index) => (
@@ -69,6 +66,7 @@ const Speakers = () => {
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: index * 0.1 }}
+                                className="snap-center shrink-0"
                             >
                                 <SpeakerCard speaker={speaker} index={index} />
                             </motion.div>
