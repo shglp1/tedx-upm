@@ -1,73 +1,132 @@
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
 import { type Speaker } from '../data/speakers';
 
 interface SpeakerCardProps {
     speaker: Speaker;
+    index?: number;
 }
 
-const SpeakerCard = ({ speaker }: SpeakerCardProps) => {
+const SpeakerCard = ({ speaker, index = 0 }: SpeakerCardProps) => {
     const { t, i18n } = useTranslation();
     const isAr = i18n.language === 'ar';
-
-    const getSessionColor = (session: number) => {
-        switch (session) {
-            case 1: return 'bg-tedx-red text-white';
-            case 2: return 'bg-madinah-gold text-white';
-            case 3: return 'bg-black text-white';
-            default: return 'bg-gray-200 text-gray-800';
-        }
-    };
 
     const getSessionBadgeText = (session: number) => {
         return t(`speakers.session_${session}_badge`);
     };
 
-    return (
-        <div
-            className="group relative bg-white dark:bg-white rounded-2xl overflow-visible shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 p-8 flex flex-col items-center text-center w-[320px] min-h-[480px] flex-shrink-0 snap-center"
-        >
-            {/* Badges - Top Right (Absolute) */}
-            {/* Fix: Moved 'top-4' to 'top-4 right-4' (LTR) or 'top-4 left-4' (RTL) based on dir, but absolute positioning works best if explicit */}
-            <div className={`absolute top-4 ${isAr ? 'left-4' : 'right-4'} z-20`}>
-                <span className={`px-3 py-1 text-[10px] md:text-xs font-bold rounded-full shadow-sm block ${getSessionColor(speaker.session)}`}>
-                    {getSessionBadgeText(speaker.session)}
-                </span>
-            </div>
+    // Movement settings: Increased distance to make the movement obvious
+    const patternVariants = (xDist: number, yDist: number, rotateDist: number) => ({
+        initial: { x: 0, y: 0, rotate: rotateDist, opacity: 0.8 },
+        hover: {
+            x: xDist, // Fixed physical movement (Removed isAr flip)
+            y: yDist,
+            rotate: rotateDist + 15,
+            opacity: 1,
+            transition: { duration: 0.5, ease: "easeOut" as any }
+        }
+    });
 
-            {/* Speaker Image - Circular & Centered */}
-            <div className="relative mb-6 mt-4">
-                {/* Independent Hover Effect: group-hover:border-tedx-red/30 on THIS element only because 'group' is parent */}
-                <div className="w-32 h-32 md:w-40 md:h-40 rounded-full p-1 border-2 border-gray-100 group-hover:border-tedx-red transition-all duration-300 bg-gray-50 group-hover:scale-105">
-                    {/* Placeholder or Image */}
-                    <div className="w-full h-full rounded-full bg-gray-200 flex items-center justify-center text-gray-400 overflow-hidden">
-                        {speaker.image ? (
-                            <img src={speaker.image} alt={isAr ? speaker.nameAr : speaker.nameEn} className="w-full h-full object-cover" />
-                        ) : (
-                            <span className="text-4xl text-gray-300">?</span>
-                        )}
-                    </div>
+    // PURE RED FILTER: This forces any SVG to become #EB0028
+    const pureRedFilter = {
+        filter: 'invert(12%) sepia(91%) saturate(7400%) hue-rotate(352deg) brightness(95%) contrast(115%)'
+    };
+
+    return (
+        <motion.div
+            initial="initial"
+            whileHover="hover"
+            className="group relative bg-white rounded-[2.5rem] shadow-2xl border-4 border-white w-[350px] h-[580px] flex-shrink-0 snap-center flex flex-col p-6 m-6"
+            style={{ direction: isAr ? 'rtl' : 'ltr' }}
+        >
+            {/* 1. Session Badge */}
+            <div className={`absolute top-8 ${isAr ? 'right-8' : 'left-8'} z-40`}>
+                <div className={`bg-[#EB0028] text-white text-[11px] font-black px-5 py-2 rounded-full shadow-lg uppercase tracking-wider ${isAr ? 'font-arabic' : 'font-english'}`}>
+                    {getSessionBadgeText(speaker.session)}
                 </div>
             </div>
 
-            {/* Content */}
-            <div className="w-full flex-grow flex flex-col">
-                <h3 className="text-xl md:text-2xl font-bold font-arabic text-gray-900 mb-2 min-h-[3rem] flex items-center justify-center">
-                    {isAr ? speaker.nameAr : speaker.nameEn}
-                </h3>
-                <p className="text-tedx-red font-medium text-sm md:text-base mb-6 min-h-[1.5rem]">
-                    {isAr ? speaker.titleAr : speaker.titleEn}
-                </p>
+            {/* 2. Image Area with VIBRANT RED Patterns */}
+            <div className="relative w-full flex justify-center mt-12 mb-8 h-[250px]">
 
-                <div className="w-full pt-6 border-t border-gray-100 mt-auto">
-                    <h4 className="text-lg font-semibold text-gray-800 mb-3 leading-snug min-h-[3.5rem] flex items-center justify-center">
+                {/* BIG RED PATTERN: Top Left (ALWAYS Left) */}
+                <motion.div
+                    variants={patternVariants(-35, -20, -15)}
+                    className="absolute -top-12 -left-12 z-10"
+                >
+                    <img
+                        src="/logo_UPM_Patterns.svg"
+                        className="w-36 h-36"
+                        style={pureRedFilter}
+                        alt=""
+                    />
+                </motion.div>
+
+                {/* BIG RED PATTERN: Bottom Right (ALWAYS Right) */}
+                <motion.div
+                    variants={patternVariants(40, 25, 20)}
+                    className="absolute -bottom-14 -right-14 z-10"
+                >
+                    <img
+                        src="/logo_Plam_Pattern.svg"
+                        className="w-44 h-44"
+                        style={pureRedFilter}
+                        alt=""
+                    />
+                </motion.div>
+
+                {/* RED PATTERN: Side (ALWAYS Right) */}
+                <motion.div
+                    variants={patternVariants(20, 0, 45)}
+                    className="absolute top-1/2 -right-14 z-10"
+                >
+                    <img
+                        src="/logo_Haram_Pattern.svg"
+                        className="w-28 h-28"
+                        style={pureRedFilter}
+                        alt=""
+                    />
+                </motion.div>
+
+                {/* The Red Photo Square */}
+                <motion.div
+                    className="w-[210px] h-[230px] bg-[#EB0028] relative z-20 shadow-[0_20px_50px_rgba(235,0,40,0.3)] overflow-hidden rounded-2xl flex items-end justify-center"
+                    whileHover={{ scale: 1.02, y: -5 }}
+                >
+                    {speaker.image ? (
+                        <img
+                            src={speaker.image}
+                            alt={isAr ? speaker.nameAr : speaker.nameEn}
+                            className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110"
+                        />
+                    ) : (
+                        <div className="w-full h-full flex items-center justify-center bg-neutral-900">
+                            <span className="text-white text-6xl font-black">?</span>
+                        </div>
+                    )}
+                </motion.div>
+            </div>
+
+            {/* 3. Text Content */}
+            <div className="flex-1 flex flex-col items-center text-center px-2">
+                <h3 className={`text-black font-black text-2xl mb-1 tracking-tight ${isAr ? 'font-arabic' : 'font-english'}`}>
+                    {t('speakers.label') || (isAr ? "متحدث" : "Speaker")} {index + 1}
+                </h3>
+
+                <h4 className={`text-[#EB0028] font-bold text-xl mb-6 ${isAr ? 'font-arabic' : 'font-english'}`}>
+                    {isAr ? speaker.nameAr : speaker.nameEn}
+                </h4>
+
+                <div className="w-full border-t-2 border-dashed border-gray-100 pt-6 mt-auto">
+                    <p className={`text-black font-black text-lg leading-tight mb-2 ${isAr ? 'font-arabic' : 'font-english'}`}>
                         {t(`speakers.${speaker.talkKey}.title`)}
-                    </h4>
-                    <p className="text-sm text-gray-500 leading-relaxed line-clamp-4">
+                    </p>
+                    <p className={`text-gray-500 text-sm font-medium leading-relaxed line-clamp-2 ${isAr ? 'font-arabic' : 'font-english'}`}>
                         {t(`speakers.${speaker.talkKey}.desc`)}
                     </p>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 };
 

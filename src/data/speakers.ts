@@ -8,7 +8,7 @@ export const speakers: Speaker[] = [
         nameEn: "Speaker 1",
         titleAr: "خبير تخطيط عمراني",
         titleEn: "Urban Planning Expert",
-        image: "/speakers/placeholder-1.webp",
+        image: "/speaker_placeholder.svg",
         session: 1,
         talkNumber: 1,
         talkKey: "talk_1"
@@ -19,7 +19,7 @@ export const speakers: Speaker[] = [
         nameEn: "Speaker 2",
         titleAr: "خبير ضيافة",
         titleEn: "Hospitality Expert",
-        image: "/speakers/placeholder-2.webp",
+        image: "/speaker_placeholder.svg",
         session: 1,
         talkNumber: 2,
         talkKey: "talk_2"
@@ -30,7 +30,7 @@ export const speakers: Speaker[] = [
         nameEn: "Speaker 3",
         titleAr: "شخصية مؤثرة",
         titleEn: "Influential Figure",
-        image: "/speakers/placeholder-3.webp",
+        image: "/speaker_placeholder.svg",
         session: 1,
         talkNumber: 3,
         talkKey: "talk_3"
@@ -41,7 +41,7 @@ export const speakers: Speaker[] = [
         nameEn: "Speaker 4",
         titleAr: "ممثل العمل التطوعي",
         titleEn: "Volunteer Representative",
-        image: "/speakers/placeholder-4.webp",
+        image: "/speaker_placeholder.svg",
         session: 1,
         talkNumber: 4,
         talkKey: "talk_4"
@@ -54,7 +54,7 @@ export const speakers: Speaker[] = [
         nameEn: "Speaker 5",
         titleAr: "أخصائي أرشفة",
         titleEn: "Archiving Specialist",
-        image: "/speakers/placeholder-5.webp",
+        image: "/speaker_placeholder.svg",
         session: 2,
         talkNumber: 5,
         talkKey: "talk_5"
@@ -65,7 +65,7 @@ export const speakers: Speaker[] = [
         nameEn: "Speaker 6",
         titleAr: "صانع محتوى ثقافي",
         titleEn: "Cultural Content Creator",
-        image: "/speakers/placeholder-6.webp",
+        image: "/speaker_placeholder.svg",
         session: 2,
         talkNumber: 6,
         talkKey: "talk_6"
@@ -76,7 +76,7 @@ export const speakers: Speaker[] = [
         nameEn: "Speaker 7",
         titleAr: "مؤسس شركة سياحة تقنية",
         titleEn: "Tech Tourism Founder",
-        image: "/speakers/placeholder-7.webp",
+        image: "/speaker_placeholder.svg",
         session: 2,
         talkNumber: 7,
         talkKey: "talk_7"
@@ -89,7 +89,7 @@ export const speakers: Speaker[] = [
         nameEn: "Speaker 8",
         titleAr: "رائد أعمال سياحي",
         titleEn: "Tourism Entrepreneur",
-        image: "/speakers/placeholder-8.webp",
+        image: "/speaker_placeholder.svg",
         session: 3,
         talkNumber: 8,
         talkKey: "talk_8"
@@ -100,7 +100,7 @@ export const speakers: Speaker[] = [
         nameEn: "Speaker 9",
         titleAr: "مطور تعليمي",
         titleEn: "Educational Developer",
-        image: "/speakers/placeholder-9.webp",
+        image: "/speaker_placeholder.svg",
         session: 3,
         talkNumber: 9,
         talkKey: "talk_9"
@@ -111,7 +111,7 @@ export const speakers: Speaker[] = [
         nameEn: "Speaker 10",
         titleAr: "مصمم تجارب",
         titleEn: "Experience Designer",
-        image: "/speakers/placeholder-10.webp",
+        image: "/speaker_placeholder.svg",
         session: 3,
         talkNumber: 10,
         talkKey: "talk_10"
@@ -122,7 +122,7 @@ export const speakers: Speaker[] = [
         nameEn: "Speaker 11",
         titleAr: "قيادي صناعي",
         titleEn: "Industrial Leader",
-        image: "/speakers/placeholder-11.webp",
+        image: "/speaker_placeholder.svg",
         session: 3,
         talkNumber: 11,
         talkKey: "talk_11"

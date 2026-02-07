@@ -1,9 +1,10 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Clock, Coffee, Mic, Users, Moon } from 'lucide-react';
+import SectionPattern from '../components/SectionPattern';
 
 const Schedule = () => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
 
     const events = [
         { key: 'opening', icon: Users },
@@ -17,13 +18,16 @@ const Schedule = () => {
     ];
 
     return (
-        <div className="min-h-screen bg-[#F4EFE6] dark:bg-madinah-dark py-12">
-            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section id="schedule" className="min-h-screen bg-white dark:bg-madinah-dark scroll-mt-28 relative overflow-hidden">
+            {/* Decorative Pattern */}
+            <SectionPattern />
+
+            <div className="py-12 md:py-16 lg:py-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
                     <motion.h1
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4"
+                        className={`text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4 ${i18n.language === 'ar' ? 'font-arabic' : 'font-english'}`}
                     >
                         {t('nav.schedule')}
                     </motion.h1>
@@ -47,14 +51,14 @@ const Schedule = () => {
                                 {/* Content Side */}
                                 <div className={`w-5/12 ${index % 2 === 0 ? 'text-right' : 'text-left'}`}>
                                     <div className={`p-6 bg-white dark:bg-gray-900 rounded-xl shadow-lg border-l-4 ${t(`schedule.${event.key}.type`).includes('Session') || t(`schedule.${event.key}.type`).includes('الجلسة') ? 'border-tedx-red' : 'border-madinah-gold'}`}>
-                                        <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-1">
+                                        <h3 className={`text-lg font-bold text-gray-900 dark:text-white mb-1 ${i18n.language === 'ar' ? 'font-arabic' : 'font-english'}`}>
                                             {t(`schedule.${event.key}.title`)}
                                         </h3>
-                                        <div className={`flex items-center gap-2 text-sm text-gray-500 font-medium ${index % 2 === 0 ? 'justify-end' : 'justify-start'}`}>
+                                        <div className={`flex items-center gap-2 text-sm text-gray-500 font-medium ${index % 2 === 0 ? 'justify-end' : 'justify-start'} ${i18n.language === 'ar' ? 'font-arabic' : 'font-english'}`}>
                                             <Clock className="w-4 h-4" />
                                             <span>{t(`schedule.${event.key}.time`)}</span>
                                         </div>
-                                        <div className="mt-2 text-xs font-semibold text-tedx-red uppercase tracking-wider">
+                                        <div className={`mt-2 text-xs font-semibold text-tedx-red uppercase tracking-wider ${i18n.language === 'ar' ? 'font-arabic' : 'font-english'}`}>
                                             {t(`schedule.${event.key}.type`)}
                                         </div>
                                     </div>
@@ -72,7 +76,7 @@ const Schedule = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

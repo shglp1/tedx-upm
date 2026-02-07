@@ -3,6 +3,7 @@ import AboutTEDx from './AboutTEDx';
 import AboutTEDxUPM from './AboutTEDxUPM';
 import Speakers from './Speakers';
 import Schedule from './Schedule';
+import Sponsors from '../components/Sponsors';
 import Contact from './Contact';
 
 const Home = () => {
@@ -10,9 +11,6 @@ const Home = () => {
         <div className="overflow-x-hidden">
             <Hero />
 
-            <section id="about-tedx">
-                <AboutTEDx />
-            </section>
 
             {/* AboutTEDxUPM has internal id="about-upm" */}
             <AboutTEDxUPM />
@@ -26,6 +24,12 @@ const Home = () => {
 
             <section id="contact">
                 <Contact />
+            </section>
+
+            <Sponsors />
+
+            <section id="about-tedx">
+                <AboutTEDx />
             </section>
         </div>
     );

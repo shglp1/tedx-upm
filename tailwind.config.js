@@ -9,13 +9,13 @@ export default {
     extend: {
       colors: {
         'tedx-red': '#FF2B06',
-        'madinah-gold': '#D4AF37',
+        'madinah-gold': '#0F0F0F',
         'madinah-dark': '#0F0F0F',
-        'warm-beige': '#F5F0E8',
+        'warm-beige': '#ffffffff',
       },
       fontFamily: {
-        arabic: ['El Messiri', 'sans-serif'],
-        english: ['Montserrat', 'sans-serif'],
+        arabic: ['KO Ghorab', 'El Messiri', 'sans-serif'],
+        english: ['Arial'],
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out',

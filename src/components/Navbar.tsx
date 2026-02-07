@@ -29,11 +29,14 @@ const Navbar = () => {
 
     const scrollToSection = (id: string) => {
         setIsOpen(false);
+        if (id === 'home') {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            return;
+        }
+
         const element = document.getElementById(id);
         if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-        } else if (id === 'home') {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     };
 
@@ -106,8 +109,9 @@ const Navbar = () => {
                                     key={link.id}
                                     onClick={() => scrollToSection(link.id)}
                                     // Set text direction per-item: RTL for Arabic labels, LTR for content
+                                    // Set text direction per-item: RTL for Arabic labels, LTR for content
                                     dir={isRTL ? 'rtl' : 'ltr'}
-                                    className="text-white hover:text-tedx-red px-6 py-2 text-sm font-medium transition-colors rounded-full transition-all hover:bg-white/5 flex-shrink whitespace-nowrap"
+                                    className={`text-white hover:text-tedx-red px-6 py-2 text-sm font-medium transition-colors rounded-full transition-all hover:bg-white/5 flex-shrink whitespace-nowrap ${isRTL ? 'font-arabic' : ''}`}
                                 >
                                     {link.id === 'about-upm' ? (
                                         <span className="flex items-baseline gap-1">
@@ -164,7 +168,7 @@ const Navbar = () => {
                                         <span className="text-white ms-2">UPM</span>
                                     </span>
                                     <span className="hidden sm:block text-[10px] text-gray-500 font-medium tracking-widest uppercase text-left leading-tight mt-1 break-words">
-                                        x = independently organized event
+                                        <span className="text-tedx-red">x</span> = independently organized event
                                     </span>
 
                                 </div>
@@ -188,7 +192,7 @@ const Navbar = () => {
                                 <button
                                     key={link.id}
                                     onClick={() => scrollToSection(link.id)}
-                                    className="block w-full text-center px-4 py-3 text-base font-semibold text-white hover:text-tedx-red hover:bg-tedx-red/5 transition-colors"
+                                    className={`block w-full text-center px-4 py-3 text-base font-semibold text-white hover:text-tedx-red hover:bg-tedx-red/5 transition-colors ${isRTL ? 'font-arabic' : ''}`}
                                 >
                                     {link.id === 'about-upm' ? (
                                         <span className="flex items-center justify-center gap-1">

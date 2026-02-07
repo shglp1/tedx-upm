@@ -27,21 +27,17 @@
     "about_upm": {
         "title": "About TEDxUPM",
         "intro_title": "From Its Light...",
-        "intro_subtitle": "The Light of Ideas with the Light of Place",
-        "content_p1": "In a city where the light of ideas meets the light of place, where the radiance of inspiration intertwines with the luminance of Madinah, stories pulse with a unique glow unlike any other city.",
-        "content_p2": "Here... where the brilliance of history meets the radiance of the soul, where hospitality transcends service to become a feeling that illuminates the heart before the place.",
-        "content_p3": "This year's TEDxUPM edition presents an event not just to be watched... but felt and lived. An event bringing together the light of ideas worth spreading, the light of a city that has inspired the world for centuries, and the light of inspiration born when human experience intertwines with the deep values of this blessed land.",
+        "intro_subtitle": "From a city that inspires minds to ideas told to the world",
+        "content_intro": "Here... where the brilliance of history meets the radiance of the soul,\nAnd where hospitality transcends service to become a feeling that touches the heart before the place.\nThis year's edition of <0>TEDx </0>UPM presents an event not merely to be watched,\nBut to be experienced deeply and to leave its mark.\nAn event that brings together the light of ideas worth spreading,\nThe light of the city that has inspired the world for centuries,\nAnd the light of inspiration born when human experience intersects with the deep-rooted values of this place.",
         "tourism_title": "Why Tourism?",
-        "tourism_content_p1": "In alignment with Saudi Vision 2030's objectives to make Madinah a leading global destination for historical and cultural tourism, Prince Muqrin University has adopted this year's TEDxUPM event targeting the \"tourism\" sector to raise awareness of future opportunities in tourism and connect students with their role in developing this promising field.",
-        "tourism_content_p2": "As one of the first universities offering academic programs in international tourism and hospitality, this is an ideal opportunity to lead this qualitative dialogue about tourism transformation and the role of youth in enriching the visitor experience and developing destinations in Madinah through strategic partnerships with relevant entities.",
-        "quote": "Madinah is not a place to visit... but an identity to live"
+        "tourism_content": "In alignment with the objectives of Saudi Vision 2030 to make Madinah a leading global destination, Prince Muqrin University has adopted this year's <0>TEDx </0>UPM event with tourism as a central theme, within an integrated ecosystem of fields including culture and heritage, visitor experience and hospitality, smart tourism, entrepreneurship, leadership, and change-making. This reflects the diversity of opportunities and the integration of roles in developing the city, stemming from the university's position as one of the first universities globally to offer specialized academic programs in international tourism and hospitality.\n\nThe event also targets complementary groups with direct impact, including entrepreneurs and innovators, companies and the private sector, those interested in culture, heritage, and hospitality, as well as investors in tourism and services, to support an integrated dialogue that connects ideas with reality and contributes to creating a sustainable impact in partnership with relevant entities."
     },
     "schedule": {
         "title": "Event Schedule",
         "opening": {
             "time": "4:30 – 4:45 PM",
             "type": "Opening",
-            "title": "Welcome + Introduction: Inspiration From Its Light"
+            "title": "Welcome, Introduction to 'Inspiration From Its Light'"
         },
         "session1": {
             "time": "4:45 – 5:45 PM",
@@ -55,7 +51,7 @@
         "break1": {
             "time": "5:45 – 6:10 PM",
             "type": "Coffee Break",
-            "title": "Coffee + Networking + Light Experience"
+            "title": "Coffee, Networking, and Light Experience"
         },
         "session2": {
             "time": "6:10 – 7:10 PM",
@@ -69,7 +65,7 @@
         "break2": {
             "time": "7:10 – 7:30 PM",
             "type": "Short Break",
-            "title": "Prayer/Rest Break"
+            "title": "Prayer Break"
         },
         "session3": {
             "time": "7:30 – 8:30 PM",
@@ -83,7 +79,7 @@
         "closing": {
             "time": "8:30 PM",
             "type": "Closing",
-            "title": "Thanks + Group Photo + Call to Continue the Dialogue"
+            "title": "Thanks, Group Photo, Call to Continue the Dialogue"
         },
         "gathering": {
             "time": "9:00 PM",
@@ -93,67 +89,72 @@
     },
     "speakers": {
         "title": "Speakers",
+        "label": "Speaker",
         "session_1_badge": "Session 1: The Light of Ideas",
         "session_2_badge": "Session 2: Smart Tourism",
         "session_3_badge": "Session 3: Integrated Experience",
         "talk_1": {
-            "title": "A City Rooted in Values, Globally Oriented",
-            "desc": "Urban planning, sustainability, and quality of life in Madinah"
+            "title": "Urban Planning Expert",
+            "desc": "How does urban planning reflect on quality of life in a city with deep values?"
         },
         "talk_2": {
-            "title": "Madinah's Hospitality: From Tradition to Global Tourism Model",
-            "desc": "Transforming traditional hospitality values into professional economic models"
+            "title": "Hospitality Expert",
+            "desc": "When the hospitality of the city's people transforms from an inherited custom to a global experience."
         },
         "talk_3": {
-            "title": "An Experience Beyond Visitation",
-            "desc": "Visitor perspectives on Madinah - transformation, peace, and spiritual experience"
+            "title": "Influential Figure",
+            "desc": "How does the place leave its mark on the visitor?"
         },
         "talk_4": {
-            "title": "Hands of Light",
-            "desc": "Volunteerism in Madinah - volunteer guides, community organizations, CSR initiatives"
+            "title": "Volunteer Work Representative",
+            "desc": "Volunteering in the city... hands that make a difference."
         },
         "talk_5": {
-            "title": "Protecting Heritage Digitally",
-            "desc": "Documentation, archiving, filming, preserving stories of elders before they're lost"
+            "title": "Archiving Specialist",
+            "desc": "When stories are preserved, their impact remains alive."
         },
         "talk_6": {
-            "title": "How Do We Reach the World Properly?",
-            "desc": "Communicating heritage globally with quality content (languages, platforms, partnerships)"
+            "title": "Cultural Content Creator",
+            "desc": "From local story to global impact."
         },
         "talk_7": {
-            "title": "Your Guide in Your Phone - Guide Madina",
-            "desc": "Using QR/AR/AI as interactive guide with stories, translation, personalized recommendations"
+            "title": "Tech Tourism Founder",
+            "desc": "Can technology be a travel companion?"
         },
         "talk_8": {
-            "title": "From Idea to Reality",
-            "desc": "Young entrepreneur's story transforming simple tourism experience into sustainable project"
+            "title": "Tourism Entrepreneur",
+            "desc": "Tourism entrepreneurship, from experience to sustainability."
         },
         "talk_9": {
-            "title": "School Trips... But with a New Style",
-            "desc": "Connecting landmarks with curriculum, structured visits, teacher guides, pre/post activities"
+            "title": "Educational Developer",
+            "desc": "Connecting knowledge with place and experience."
         },
         "talk_10": {
-            "title": "Education Without Blackboards",
-            "desc": "Designing interactive educational experiences"
+            "title": "Experience Designer",
+            "desc": "How do we design learning that is lived, not just taught?"
         },
         "talk_11": {
-            "title": "The City Behind the Scenes",
-            "desc": "How industry (furniture, food, infrastructure, transport) creates integrated tourism experience"
+            "title": "Industrial Leader",
+            "desc": "Industry as a partner in an integrated tourism experience."
         }
     },
     "contact": {
         "title": "Contact Us",
-        "subtitle": "We'd love to hear from you. Get in touch with us for any inquiries about the event.",
+        "subtitle": "For inquiries and information related to the event, we would be pleased to hear from you.",
         "venue_label": "Venue",
         "venue": "Prince Muqrin University - Female Campus | Bin Laden Hall",
         "capacity": "580 Seats",
         "email": "career.center@upm.edu.sa",
         "open_maps": "Open in Google Maps",
-        "follow_us": "Follow Us"
+        "follow_us": "Follow us on"
     },
     "footer": {
         "social_label": "Follow Us",
         "disclaimer": "This independent TEDx event is operated under license from TED.",
-        "rights": "All rights reserved."
+        "rights": "All rights reserved.",
+        "developed_by": "Website developed by Eng. Salem Shurrab"
+    },
+    "sponsors": {
+        "title": "Sponsors"
     }
 }
