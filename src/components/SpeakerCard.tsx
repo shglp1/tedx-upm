@@ -59,6 +59,7 @@ const SpeakerCard = ({ speaker, index = 0 }: SpeakerCardProps) => {
                         className="w-36 h-36"
                         style={pureRedFilter}
                         alt=""
+
                     />
                 </motion.div>
 
