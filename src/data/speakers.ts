@@ -41,7 +41,7 @@ export const speakers: Speaker[] = [
         nameEn: "Mr. Mohammed Ribat",
         titleAr: "فنان ومدير إبداعي",
         titleEn: "Artist and Creative Director",
-        image: "/mohmmad ribat.svg",
+        image: "/mohmmad ribat.png",
         session: 1,
         talkNumber: 4,
         talkKey: "talk_5"
@@ -52,7 +52,7 @@ export const speakers: Speaker[] = [
         nameEn: "Dr. Hussein Al-Sadiq",
         titleAr: "خبير في الهندسة الميكانيكية والابتكار المدني",
         titleEn: "Expert in Mechanical Engineering and Civic Innovation",
-        image: "/hussin.svg",
+        image: "/hussin.png",
         session: 1,
         talkNumber: 5,
         talkKey: "talk_6"
@@ -65,7 +65,7 @@ export const speakers: Speaker[] = [
         nameEn: "Eng. Safia Saqr",
         titleAr: "رائدة أعمال - شريكة في مشروع المغيسلة",
         titleEn: "Entrepreneur - Partner in Al-Mughaisila Project",
-        image: "/Safia.svg",
+        image: "/Safia.png",
         session: 2,
         talkNumber: 6,
         talkKey: "talk_7"
@@ -76,7 +76,7 @@ export const speakers: Speaker[] = [
         nameEn: "Dr. Ahmad Al-Hayek",
         titleAr: "رئيس قسم الذكاء الاصطناعي بجامعة الأمير مقرن",
         titleEn: "Head of AI Department at Prince Muqrin University",
-        image: "/Ahmad .svg",
+        image: "/Ahmad .png",
         session: 2,
         talkNumber: 7,
         talkKey: "talk_8"
@@ -87,7 +87,7 @@ export const speakers: Speaker[] = [
         nameEn: "Ahmad Al-Jurayshi",
         titleAr: "رئيس مجلس إدارة مشروع “قصة المكان”",
         titleEn: "Chairman of 'Story of the Place' Project",
-        image: "/AhmadAljarishi.svg",
+        image: "/AhmadAljarishi.png",
         session: 2,
         talkNumber: 8,
         talkKey: "talk_9"
@@ -100,7 +100,7 @@ export const speakers: Speaker[] = [
         nameEn: "Mahmoud Junaid",
         titleAr: "طالب هندسة معمارية بجامعة الأمير مقرن",
         titleEn: "Architecture Student at Prince Muqrin University",
-        image: "/mahoomd.svg",
+        image: "/mahoomd.png",
         session: 3,
         talkNumber: 9,
         talkKey: "talk_10"
@@ -111,7 +111,7 @@ export const speakers: Speaker[] = [
         nameEn: "Dr. Abdullah Kabir",
         titleAr: "خبير ومستشار في تاريخ ومعالم المدينة المنورة",
         titleEn: "Expert and Consultant in Madinah History and Landmarks",
-        image: "/abdullahkabir.svg",
+        image: "/abdullahkabir.png",
         session: 3,
         talkNumber: 10,
         talkKey: "talk_11"

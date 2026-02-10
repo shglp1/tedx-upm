@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
@@ -9,6 +9,35 @@ import SectionPattern from '../components/SectionPattern';
 const Speakers = () => {
     const { t, i18n } = useTranslation();
     const scrollContainerRef = useRef<HTMLDivElement>(null);
+
+    // Preload speaker images to ensure smooth scrolling
+    useEffect(() => {
+        const preloadImages = async () => {
+            const imagePromises = speakers.map((speaker) => {
+                return new Promise((resolve, reject) => {
+                    const img = new Image();
+                    img.src = speaker.image;
+                    img.onload = resolve;
+                    img.onerror = reject;
+                });
+            });
+
+            try {
+                await Promise.all(imagePromises);
+                console.log('All speaker images preloaded');
+            } catch (error) {
+                console.error('Error preloading speaker images', error);
+            }
+        };
+
+        // Small delay to allow main content to load first
+        const timer = setTimeout(() => {
+            preloadImages();
+        }, 1000);
+
+        return () => clearTimeout(timer);
+    }, []);
+
     const scroll = (direction: 'left' | 'right') => {
         if (scrollContainerRef.current) {
             const scrollAmount = 420; // Card w(350) + Margin(48) + Gap(24) approx
