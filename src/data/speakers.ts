@@ -1,130 +1,119 @@
 // Interface defined at bottom
 
 export const speakers: Speaker[] = [
-    // Session 1: نور الفكرة بنور المكان (Red Badge)
+    // Session 1 (5:00 - 6:10)
     {
         id: 1,
-        nameAr: "متحدث 1",
-        nameEn: "Speaker 1",
-        titleAr: "خبير تخطيط عمراني",
-        titleEn: "Urban Planning Expert",
-        image: "/speaker_placeholder.svg",
+        nameAr: "د. وليد فتيحي",
+        nameEn: "Dr. Walid Fitaihi",
+        titleAr: "طبيب استشاري - مؤسس ورئيس مجلس إدارة المركز الطبي الدولي",
+        titleEn: "Consultant Physician - Founder and Chairman of International Medical Center",
+        image: "/waleed.svg",
         session: 1,
         talkNumber: 1,
         talkKey: "talk_1"
     },
     {
         id: 2,
-        nameAr: "متحدث 2",
-        nameEn: "Speaker 2",
-        titleAr: "خبير ضيافة",
-        titleEn: "Hospitality Expert",
-        image: "/speaker_placeholder.svg",
+        nameAr: "م. أرون موراليدهار",
+        nameEn: "Eng. Arun Muralidhar",
+        titleAr: "مدير التصميم في مدينة المعرفة الاقتصادية",
+        titleEn: "Design Director at Knowledge Economic City",
+        image: "/engArawan.svg",
         session: 1,
         talkNumber: 2,
-        talkKey: "talk_2"
-    },
-    {
-        id: 3,
-        nameAr: "متحدث 3",
-        nameEn: "Speaker 3",
-        titleAr: "شخصية مؤثرة",
-        titleEn: "Influential Figure",
-        image: "/speaker_placeholder.svg",
-        session: 1,
-        talkNumber: 3,
         talkKey: "talk_3"
     },
     {
-        id: 4,
-        nameAr: "متحدث 4",
-        nameEn: "Speaker 4",
-        titleAr: "ممثل العمل التطوعي",
-        titleEn: "Volunteer Representative",
-        image: "/speaker_placeholder.svg",
+        id: 3,
+        nameAr: "روف العوفي",
+        nameEn: "Rof Al-Ofi",
+        titleAr: "أخصائية تخطيط استراتيجي - برنامج جودة الحياة",
+        titleEn: "Strategic Planning Specialist - Quality of Life Program",
+        image: "/roof aloufi.svg",
         session: 1,
-        talkNumber: 4,
+        talkNumber: 3,
         talkKey: "talk_4"
     },
-
-    // Session 2: السياحة الذكية (Gold Badge)
     {
-        id: 5,
-        nameAr: "متحدث 5",
-        nameEn: "Speaker 5",
-        titleAr: "أخصائي أرشفة",
-        titleEn: "Archiving Specialist",
-        image: "/speaker_placeholder.svg",
-        session: 2,
-        talkNumber: 5,
+        id: 4,
+        nameAr: "أ. محمد رباط",
+        nameEn: "Mr. Mohammed Ribat",
+        titleAr: "فنان ومدير إبداعي",
+        titleEn: "Artist and Creative Director",
+        image: "/mohmmad ribat.svg",
+        session: 1,
+        talkNumber: 4,
         talkKey: "talk_5"
     },
     {
+        id: 5,
+        nameAr: "د. حسين الصادق",
+        nameEn: "Dr. Hussein Al-Sadiq",
+        titleAr: "خبير في الهندسة الميكانيكية والابتكار المدني",
+        titleEn: "Expert in Mechanical Engineering and Civic Innovation",
+        image: "/hussin.svg",
+        session: 1,
+        talkNumber: 5,
+        talkKey: "talk_6"
+    },
+
+    // Session 2 (6:40 - 7:20)
+    {
         id: 6,
-        nameAr: "متحدث 6",
-        nameEn: "Speaker 6",
-        titleAr: "صانع محتوى ثقافي",
-        titleEn: "Cultural Content Creator",
-        image: "/speaker_placeholder.svg",
+        nameAr: "م. صفية صقر",
+        nameEn: "Eng. Safia Saqr",
+        titleAr: "رائدة أعمال - شريكة في مشروع المغيسلة",
+        titleEn: "Entrepreneur - Partner in Al-Mughaisila Project",
+        image: "/Safia.svg",
         session: 2,
         talkNumber: 6,
-        talkKey: "talk_6"
+        talkKey: "talk_7"
     },
     {
         id: 7,
-        nameAr: "متحدث 7",
-        nameEn: "Speaker 7",
-        titleAr: "مؤسس شركة سياحة تقنية",
-        titleEn: "Tech Tourism Founder",
-        image: "/speaker_placeholder.svg",
+        nameAr: "د. أحمد الحايك",
+        nameEn: "Dr. Ahmad Al-Hayek",
+        titleAr: "رئيس قسم الذكاء الاصطناعي بجامعة الأمير مقرن",
+        titleEn: "Head of AI Department at Prince Muqrin University",
+        image: "/Ahmad .svg",
         session: 2,
         talkNumber: 7,
-        talkKey: "talk_7"
-    },
-
-    // Session 3: المدينة كتجربة متكاملة (Black Badge)
-    {
-        id: 8,
-        nameAr: "متحدث 8",
-        nameEn: "Speaker 8",
-        titleAr: "رائد أعمال سياحي",
-        titleEn: "Tourism Entrepreneur",
-        image: "/speaker_placeholder.svg",
-        session: 3,
-        talkNumber: 8,
         talkKey: "talk_8"
     },
     {
-        id: 9,
-        nameAr: "متحدث 9",
-        nameEn: "Speaker 9",
-        titleAr: "مطور تعليمي",
-        titleEn: "Educational Developer",
-        image: "/speaker_placeholder.svg",
-        session: 3,
-        talkNumber: 9,
+        id: 8,
+        nameAr: "أحمد الجريشي",
+        nameEn: "Ahmad Al-Jurayshi",
+        titleAr: "رئيس مجلس إدارة مشروع “قصة المكان”",
+        titleEn: "Chairman of 'Story of the Place' Project",
+        image: "/AhmadAljarishi.svg",
+        session: 2,
+        talkNumber: 8,
         talkKey: "talk_9"
     },
+
+    // Session 3 (7:25+)
     {
-        id: 10,
-        nameAr: "متحدث 10",
-        nameEn: "Speaker 10",
-        titleAr: "مصمم تجارب",
-        titleEn: "Experience Designer",
-        image: "/speaker_placeholder.svg",
+        id: 9,
+        nameAr: "محمود جنيد",
+        nameEn: "Mahmoud Junaid",
+        titleAr: "طالب هندسة معمارية بجامعة الأمير مقرن",
+        titleEn: "Architecture Student at Prince Muqrin University",
+        image: "/mahoomd.svg",
         session: 3,
-        talkNumber: 10,
+        talkNumber: 9,
         talkKey: "talk_10"
     },
     {
-        id: 11,
-        nameAr: "متحدث 11",
-        nameEn: "Speaker 11",
-        titleAr: "قيادي صناعي",
-        titleEn: "Industrial Leader",
-        image: "/speaker_placeholder.svg",
+        id: 10,
+        nameAr: "د. عبدالله كابر",
+        nameEn: "Dr. Abdullah Kabir",
+        titleAr: "خبير ومستشار في تاريخ ومعالم المدينة المنورة",
+        titleEn: "Expert and Consultant in Madinah History and Landmarks",
+        image: "/abdullahkabir.svg",
         session: 3,
-        talkNumber: 11,
+        talkNumber: 10,
         talkKey: "talk_11"
     }
 ];

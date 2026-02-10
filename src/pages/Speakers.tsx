@@ -68,7 +68,7 @@ const Speakers = () => {
                                 transition={{ delay: index * 0.1 }}
                                 className="snap-center shrink-0"
                             >
-                                <SpeakerCard speaker={speaker} index={index} />
+                                <SpeakerCard speaker={speaker} />
                             </motion.div>
                         ))}
                     </div>

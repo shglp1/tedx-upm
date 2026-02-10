@@ -37,10 +37,10 @@
         "opening": {
             "time": "4:30 – 4:45 PM",
             "type": "Opening",
-            "title": "Welcome, Introduction to 'Inspiration From Its Light'"
+            "title": "Opening"
         },
         "session1": {
-            "time": "4:45 – 5:45 PM",
+            "time": "5:00 – 6:15 PM",
             "type": "Session 1",
             "title": "The Light of Ideas with the Light of Place",
             "talk1": "Talk 1: A City Rooted in Values, Globally Oriented",
@@ -49,26 +49,21 @@
             "talk4": "Talk 4: Hands of Light"
         },
         "break1": {
-            "time": "5:45 – 6:10 PM",
-            "type": "Coffee Break",
-            "title": "Coffee, Networking, and Light Experience"
+            "time": "6:15 – 6:35 PM",
+            "type": "Short Break",
+            "title": "Short Break"
         },
         "session2": {
-            "time": "6:10 – 7:10 PM",
+            "time": "6:40 – 7:20 PM",
             "type": "Session 2",
-            "title": "How Does Smart Tourism Tell Madinah's Story?",
+            "title": "Smart Tourism",
             "talk5": "Talk 5: Protecting Heritage Digitally",
             "talk6": "Talk 6: How Do We Reach the World Properly?",
             "talk7": "Talk 7: Your Guide in Your Phone - Guide Madina",
             "performance": "Performance: Artistic Interlude"
         },
-        "break2": {
-            "time": "7:10 – 7:30 PM",
-            "type": "Short Break",
-            "title": "Prayer Break"
-        },
         "session3": {
-            "time": "7:30 – 8:30 PM",
+            "time": "7:25 – 7:50 PM",
             "type": "Session 3",
             "title": "Madinah as an Integrated Experience",
             "talk8": "Talk 8: From Idea to Reality",
@@ -77,14 +72,9 @@
             "talk11": "Talk 11: The City Behind the Scenes"
         },
         "closing": {
-            "time": "8:30 PM",
+            "time": "7:55 – 8:10 PM",
             "type": "Closing",
-            "title": "Thanks, Group Photo, Call to Continue the Dialogue"
-        },
-        "gathering": {
-            "time": "9:00 PM",
-            "type": "Alumni Gathering",
-            "title": "Event gathering alumni and faculty members"
+            "title": "Honoring then Closing"
         }
     },
     "speakers": {
@@ -94,48 +84,48 @@
         "session_2_badge": "Session 2: Smart Tourism",
         "session_3_badge": "Session 3: Integrated Experience",
         "talk_1": {
-            "title": "Urban Planning Expert",
-            "desc": "How does urban planning reflect on quality of life in a city with deep values?"
+            "title": "The Man the City Passed Through",
+            "desc": "From daily noise to calm meaning"
         },
         "talk_2": {
-            "title": "Hospitality Expert",
-            "desc": "When the hospitality of the city's people transforms from an inherited custom to a global experience."
+            "title": "Madinah Urban Identity",
+            "desc": "Historic soul with modern form"
         },
         "talk_3": {
-            "title": "Influential Figure",
-            "desc": "How does the place leave its mark on the visitor?"
+            "title": "Rooted City Global Presence",
+            "desc": "Sustainability that protects value"
         },
         "talk_4": {
-            "title": "Volunteer Work Representative",
-            "desc": "Volunteering in the city... hands that make a difference."
+            "title": "Quality of Life in Madinah",
+            "desc": "How projects reshape daily living"
         },
         "talk_5": {
-            "title": "Archiving Specialist",
-            "desc": "When stories are preserved, their impact remains alive."
+            "title": "Art Segment",
+            "desc": ""
         },
         "talk_6": {
-            "title": "Cultural Content Creator",
-            "desc": "From local story to global impact."
+            "title": "Madinah Bounty",
+            "desc": "Turning resources into real solutions"
         },
         "talk_7": {
-            "title": "Tech Tourism Founder",
-            "desc": "Can technology be a travel companion?"
+            "title": "From Idea to Reality",
+            "desc": "A local dream becomes a tourism project"
         },
         "talk_8": {
-            "title": "Tourism Entrepreneur",
-            "desc": "Tourism entrepreneurship, from experience to sustainability."
+            "title": "MadinahGPT",
+            "desc": "A smart guide to places and stories"
         },
         "talk_9": {
-            "title": "Educational Developer",
-            "desc": "Connecting knowledge with place and experience."
+            "title": "Reaching the World Right",
+            "desc": "When heritage becomes an experience"
         },
         "talk_10": {
-            "title": "Experience Designer",
-            "desc": "How do we design learning that is lived, not just taught?"
+            "title": "Student Speaker",
+            "desc": ""
         },
         "talk_11": {
-            "title": "Industrial Leader",
-            "desc": "Industry as a partner in an integrated tourism experience."
+            "title": "School Trips Reimagined",
+            "desc": "Structured visits with guides and activities"
         }
     },
     "contact": {

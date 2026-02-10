@@ -4,10 +4,9 @@ import { type Speaker } from '../data/speakers';
 
 interface SpeakerCardProps {
     speaker: Speaker;
-    index?: number;
 }
 
-const SpeakerCard = ({ speaker, index = 0 }: SpeakerCardProps) => {
+const SpeakerCard = ({ speaker }: SpeakerCardProps) => {
     const { t, i18n } = useTranslation();
     const isAr = i18n.language === 'ar';
 
@@ -91,40 +90,47 @@ const SpeakerCard = ({ speaker, index = 0 }: SpeakerCardProps) => {
 
                 {/* The Red Photo Square */}
                 <motion.div
-                    className="w-[210px] h-[230px] bg-[#EB0028] relative z-20 shadow-[0_20px_50px_rgba(235,0,40,0.3)] overflow-hidden rounded-2xl flex items-end justify-center will-change-transform"
+                    className="w-[210px] h-[230px] bg-[#EB0028] relative z-20 shadow-[0_20px_50px_rgba(235,0,40,0.3)] overflow-hidden rounded-2xl will-change-transform flex items-center justify-center"
                     whileHover={{ scale: 1.02, y: -5 }}
                 >
-                    {speaker.image ? (
-                        <img
-                            src={speaker.image}
-                            alt={isAr ? speaker.nameAr : speaker.nameEn}
-                            className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110"
-                        />
-                    ) : (
-                        <div className="w-full h-full flex items-center justify-center bg-neutral-900">
-                            <span className="text-white text-6xl font-black">?</span>
-                        </div>
-                    )}
+                    {/* Centering Wrapper */}
+                    <div className="absolute inset-0 flex items-center justify-center p-6">
+                        {speaker.image ? (
+                            <img
+                                src={speaker.image}
+                                alt={isAr ? speaker.nameAr : speaker.nameEn}
+                                className="block w-auto h-auto max-w-full max-h-full object-contain transition-transform duration-700 group-hover:scale-110"
+                            />
+                        ) : (
+                            <div className="w-full h-full flex items-center justify-center bg-neutral-900">
+                                <span className="text-white text-6xl font-black">?</span>
+                            </div>
+                        )}
+                    </div>
                 </motion.div>
             </div>
 
             {/* 3. Text Content */}
             <div className="flex-1 flex flex-col items-center text-center px-2">
-                <h3 className={`text-black font-black text-2xl mb-1 tracking-tight ${isAr ? 'font-arabic' : 'font-english'}`}>
-                    {t('speakers.label') || (isAr ? "متحدث" : "Speaker")} {index + 1}
-                </h3>
 
-                <h4 className={`text-[#EB0028] font-bold text-xl mb-6 ${isAr ? 'font-arabic' : 'font-english'}`}>
+
+                <h4 className={`text-[#EB0028] font-bold text-xl mb-2 ${isAr ? 'font-arabic' : 'font-english'}`}>
                     {isAr ? speaker.nameAr : speaker.nameEn}
                 </h4>
+
+                <p className={`text-gray-500 text-sm font-medium mb-6 px-2 min-h-[40px] flex items-center justify-center ${isAr ? 'font-arabic' : 'font-english'}`}>
+                    {isAr ? speaker.titleAr : speaker.titleEn}
+                </p>
 
                 <div className="w-full border-t-2 border-dashed border-gray-100 pt-6 mt-auto">
                     <p className={`text-black font-black text-lg leading-tight mb-2 ${isAr ? 'font-arabic' : 'font-english'}`}>
                         {t(`speakers.${speaker.talkKey}.title`)}
                     </p>
-                    <p className={`text-gray-500 text-sm font-medium leading-relaxed line-clamp-2 ${isAr ? 'font-arabic' : 'font-english'}`}>
-                        {t(`speakers.${speaker.talkKey}.desc`)}
-                    </p>
+                    {t(`speakers.${speaker.talkKey}.desc`) && (
+                        <p className={`text-gray-500 text-sm font-medium leading-relaxed line-clamp-2 overflow-hidden text-ellipsis ${isAr ? 'font-arabic' : 'font-english'}`} style={{ display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' }}>
+                            {t(`speakers.${speaker.talkKey}.desc`)}
+                        </p>
+                    )}
                 </div>
             </div>
         </motion.div>
