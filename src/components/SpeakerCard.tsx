@@ -99,6 +99,7 @@ const SpeakerCard = ({ speaker }: SpeakerCardProps) => {
                             <img
                                 src={speaker.image}
                                 alt={isAr ? speaker.nameAr : speaker.nameEn}
+                                loading="lazy"
                                 className="block w-auto h-auto max-w-full max-h-full object-contain transition-transform duration-700 group-hover:scale-110"
                             />
                         ) : (

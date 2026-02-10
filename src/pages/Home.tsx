@@ -1,36 +1,46 @@
+import React, { Suspense } from 'react';
 import Hero from '../components/Hero';
-import AboutTEDx from './AboutTEDx';
-import AboutTEDxUPM from './AboutTEDxUPM';
-import Speakers from './Speakers';
-import Schedule from './Schedule';
-import Sponsors from '../components/Sponsors';
-import Contact from './Contact';
+
+// Lazy load below-the-fold components
+const AboutTEDxUPM = React.lazy(() => import('./AboutTEDxUPM'));
+const Speakers = React.lazy(() => import('./Speakers'));
+const Schedule = React.lazy(() => import('./Schedule'));
+const Contact = React.lazy(() => import('./Contact'));
+const Sponsors = React.lazy(() => import('../components/Sponsors'));
+const AboutTEDx = React.lazy(() => import('./AboutTEDx'));
+
+const LoadingFallback = () => (
+    <div className="w-full h-32 flex items-center justify-center">
+        <div className="w-8 h-8 border-4 border-tedx-red border-t-transparent rounded-full animate-spin"></div>
+    </div>
+);
 
 const Home = () => {
     return (
         <div className="overflow-x-hidden">
             <Hero />
 
+            <Suspense fallback={<LoadingFallback />}>
+                {/* AboutTEDxUPM has internal id="about-upm" */}
+                <AboutTEDxUPM />
 
-            {/* AboutTEDxUPM has internal id="about-upm" */}
-            <AboutTEDxUPM />
+                {/* Speakers has internal id="speakers" */}
+                <Speakers />
 
-            {/* Speakers has internal id="speakers" */}
-            <Speakers />
+                <section id="schedule">
+                    <Schedule />
+                </section>
 
-            <section id="schedule">
-                <Schedule />
-            </section>
+                <section id="contact">
+                    <Contact />
+                </section>
 
-            <section id="contact">
-                <Contact />
-            </section>
+                <Sponsors />
 
-            <Sponsors />
-
-            <section id="about-tedx">
-                <AboutTEDx />
-            </section>
+                <section id="about-tedx">
+                    <AboutTEDx />
+                </section>
+            </Suspense>
         </div>
     );
 };
