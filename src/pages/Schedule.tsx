@@ -1,4 +1,4 @@
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Clock, Coffee, Mic, Users, Moon } from 'lucide-react';
 import SectionPattern from '../components/SectionPattern';
@@ -50,7 +50,10 @@ const Schedule = () => {
                                 <div className={`w-5/12 flex ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
                                     <div className={`w-full max-w-[420px] p-6 bg-white dark:bg-gray-900 rounded-xl shadow-lg border-l-4 ${t(`schedule.${event.key}.type`).includes('Session') || t(`schedule.${event.key}.type`).includes('الجلسة') ? 'border-tedx-red' : 'border-madinah-gold'}`}>
                                         <h3 className={`text-lg font-bold text-gray-900 dark:text-white mb-1 ${i18n.language === 'ar' ? (index % 2 === 0 ? 'text-right' : 'text-left') : 'text-left'}`}>
-                                            {t(`schedule.${event.key}.title`)}
+                                            <Trans
+                                                i18nKey={`schedule.${event.key}.title`}
+                                                components={[<span className="text-tedx-red" key="0" />]}
+                                            />
                                         </h3>
                                         <div className={`flex items-center gap-2 text-sm text-gray-500 font-medium ${i18n.language === 'ar' ? (index % 2 === 0 ? 'justify-end' : 'justify-start') : 'justify-end'}`}>
                                             <Clock className="w-4 h-4" />

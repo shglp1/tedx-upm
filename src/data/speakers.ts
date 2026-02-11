@@ -83,8 +83,8 @@ export const speakers: Speaker[] = [
     },
     {
         id: 8,
-        nameAr: "أحمد الجريشي",
-        nameEn: "Ahmad Al-Jurayshi",
+        nameAr: "أ. أحمد الجريشي",
+        nameEn: "Mr. Ahmad Al-Jurayshi",
         titleAr: "رئيس مجلس إدارة مشروع “قصة المكان”",
         titleEn: "Chairman of 'Story of the Place' Project",
         image: "/AhmadAljarishi.png",
@@ -96,8 +96,8 @@ export const speakers: Speaker[] = [
     // Session 3 (7:25+)
     {
         id: 9,
-        nameAr: "محمود جنيد",
-        nameEn: "Mahmoud Junaid",
+        nameAr: "أ. محمود جنيد",
+        nameEn: "Mr. Mahmoud Junaid",
         titleAr: "طالب هندسة معمارية بجامعة الأمير مقرن",
         titleEn: "Architecture Student at Prince Muqrin University",
         image: "/mahoomd.png",
